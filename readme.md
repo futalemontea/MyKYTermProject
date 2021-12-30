@@ -1,5 +1,7 @@
 开源软件技术期末大作业 
 
+190110910131徐占
+
 1）项目设计部分：
 
 （1）项目总体构成：
@@ -16,13 +18,13 @@ express-session使用session保存用户当前登陆状态
 
 ejs模板引擎
 
-serve-favicon 设置图标的，但是没起效果 
+serve-favicon 设置图标的，但是没起效果 所以就没管了
 
 还有http-errors、cookie-parser、morgan等等 这些是express-generator生成项目的模板里自带的
 
 （3）项目目录结构和各个部分的说明：
 
-bin 目录下有个www文件，用express-generator生成项目自带的，在这里面改端口号
+bin 目录下有个www文件，用express-generator生成项目自带的，端口号在这里面改
 
 db: 创建schema还有数据库连接
 
@@ -30,7 +32,7 @@ node_modules：导入的包
 
 public：主要是一些公用的css样式
 
-routes：所有路由
+routes：路由
 
 views:网页 
 
@@ -51,6 +53,8 @@ views:网页
 项目基本实现  almost done
 
 添加区分管理员和普通用户 add admin  （其实有点小问题，但快没时间复习计网了，只能有空再解决了）
+
+一些小的修改作为最终版本 部署到服务器上的版本 final edition
 
 
 
