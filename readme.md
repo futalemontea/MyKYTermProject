@@ -18,7 +18,7 @@ express-session使用session保存用户当前登陆状态
 
 ejs模板引擎
 
-serve-favicon 设置图标的，但是没起效果 所以就没管了
+serve-favicon 设置图标的，之前一直没起效果所以就没管了 后面不知道怎么搞得图标又可以显示了
 
 还有http-errors、cookie-parser、morgan等等 这些是express-generator生成项目的模板里自带的
 
@@ -44,6 +44,8 @@ views:网页
 
 可以删改留言，主页上也可以看到别人的留言
 
+（本来想试着用bootstrap来美化页面 但发现一直不起效果  被折磨了两天 遂放弃 后来用了别人写的一些css）
+
 3）开发日记（与commit对应）
 
 测试git提交 fitst test git(已废弃)
@@ -52,7 +54,7 @@ views:网页
 
 项目基本实现  almost done
 
-添加区分管理员和普通用户 add admin  （其实有点小问题，但快没时间复习计网了，只能有空再解决了）
+添加区分管理员和普通用户 add admin  （其实有点小问题，但快没时间复习计网了，只能有空再解决）
 
 一些小的修改作为最终版本 部署到服务器上的版本 final edition
 
