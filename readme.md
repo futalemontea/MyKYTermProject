@@ -24,8 +24,6 @@ serve-favicon 设置图标的，之前一直没起效果所以就没管了 后�
 
 （3）项目目录结构和各个部分的说明：
 
-bin 目录下有个www文件，用express-generator生成项目自带的，端口号在这里面改
-
 db: 创建schema还有数据库连接
 
 node_modules：导入的包
@@ -56,7 +54,9 @@ views:网页
 
 添加区分管理员和普通用户 add admin  （其实有点小问题，但快没时间复习计网了，只能有空再解决）
 
-一些小的修改作为最终版本 部署到服务器上的版本 final edition
+一些小的修改 final edition
+
+又改了一些内容 作为最终版本 部署到服务器上的版本 final edition
 
 
 
