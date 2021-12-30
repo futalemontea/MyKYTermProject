@@ -34,6 +34,8 @@ routes：路由
 
 views:网页 
 
+本项目参考了b站up主杨树林er上传的教学视频https://www.bilibili.com/video/BV1tZ4y1G7yn?spm_id_from=333.999.0.0 从中学到很多 对我帮助很大
+
 2）使用说明书：
 
 简单的注册登陆，这个不用我说了
