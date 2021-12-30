@@ -43,7 +43,7 @@ app.use(session({
 app.get('*', (req, res, next)=>{
   let { username } = req.session
   let url = req.url
-  console.log('当前登陆信息：', req.session.username, req.session.isLogin, url)
+  console.log('用户操作信息：', req.session.username, req.session.isLogin, url)
   if (url != '/login' && url != '/regist') {
     if (!username) {
       // 用户未登录

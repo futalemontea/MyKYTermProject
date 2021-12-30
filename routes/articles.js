@@ -9,9 +9,14 @@ var fs = require('fs')
 router.post('/write', (req, res, next)=>{
   let { title, content, username, id } = req.body
   let createTime = Date.now()
-
+console.log(username)
   if (id) {
-    
+    if(username!=req.session.username && req.session.username!='admin'){
+      res.setHeader("Content-Type", "text/html;charset=utf-8");
+      var backstr ="<script>alert('无管理员权限 不能修改别人的留言');window.location.href='/'</script>";
+      res.end(backstr)
+      res.redirect('/')
+    }
 
     // 修改文章
     id = new Object(id)  
@@ -39,9 +44,19 @@ router.post('/write', (req, res, next)=>{
 // 删除文章
 router.get('/delete', (req, res, next) => {
 
-  
+username=req.query.username
+username = new Object(username)
+
+if(username!=req.session.username && req.session.username!='admin'){
+  res.setHeader("Content-Type", "text/html;charset=utf-8");
+  var backstr ="<script>alert('无管理员权限 不能删除留言');window.location.href='/'</script>";
+  res.end(backstr)
+  res.redirect('/')
+}
   let id = req.query.id
+
   id = new Object(id)
+
   // 删除
   articleModel.deleteOne({_id: id}).then((data)=>{
     res.redirect('/')
