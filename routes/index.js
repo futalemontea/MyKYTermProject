@@ -50,8 +50,6 @@ router.get('/write', function(req, res, next) {
     id = new Object(id)
     // 用_id查询
     articleModel.findById(id).then((doc)=>{
-      // res.send({data: docs})
-      // doc.createTimeZH = moment(doc.createTime).format("YYYY-MM-DD HH:mm:ss")
       res.render('write', {doc: doc})
     }).catch(err=>{
       // res.send(err)

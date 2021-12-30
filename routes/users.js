@@ -58,7 +58,6 @@ router.post('/login', (req, res, next)=>{
 router.get('/logout', (req, res, next)=>{
   req.session.username = null
   req.session.isLogin = false
-  // req.session.destroy()
   res.redirect('/login')
 })
 

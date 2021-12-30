@@ -5,7 +5,7 @@ var multiparty = require('multiparty')
 var fs = require('fs')
 
 
-/* 修改或者新写留言 */
+// 修改或者新写留言 
 router.post('/write', (req, res, next)=>{
   let { title, content, username, id } = req.body
   let createTime = Date.now()
